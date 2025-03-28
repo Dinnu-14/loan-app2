@@ -1,7 +1,7 @@
 import streamlit as st
 import joblib
 
-clf = joblib.load('c:/dinnu/loan_data.joblib')
+clf = joblib.load('loan_data.joblib')
 
 
 st.title('LOAN APP BY DINESWAR')
