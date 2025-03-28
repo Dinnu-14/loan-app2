@@ -1,4 +1,4 @@
-import streamlit as st
+TEDimport streamlit as st
 import joblib
 
 clf = joblib.load('loan_data.joblib')
@@ -17,4 +17,4 @@ if st.button('PREDICT'):
     if Prediction == 'Y':
         st.text('LOAN IS APPROVED')
     else:
-        st.text('LOAN IS REJUCTED')
+        st.text('LOAN IS REJECTED')
