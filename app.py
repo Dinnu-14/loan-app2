@@ -1,4 +1,4 @@
-TEDimport streamlit as st
+import streamlit as st
 import joblib
 
 clf = joblib.load('loan_data.joblib')
