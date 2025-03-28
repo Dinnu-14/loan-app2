@@ -6,9 +6,9 @@ clf = joblib.load('loan_data.joblib')
 
 st.title('LOAN APP BY DINESWAR')
 g=st.selectbox('Select an gender:',['Male','Female'])
-m=st.selectbox('Select marriage status: ',['No','Yes'])
-ai=st.number_input('Enter Loan amout in thousands')
-la=st.number_input('Enter Loan amount thousands')
+m=st.selectbox('Select Marriage status: ',['No','Yes'])
+ai=st.number_input('Enter annual income (in thousands)')
+la=st.number_input('Enter Loan amount (in thousands)')
 gfinal = 0 if g == 'Male' else 1
 marriage= 0 if  m == 'No' else 1
 
