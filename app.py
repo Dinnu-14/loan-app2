@@ -14,7 +14,7 @@ gfinal= 0 if g=='Male' else 1
 marriage=0 if m=='No' else 1
 
 if st.button('PREDICT'):
-    Prediction = clf.predict([[gfinal,marrage,ai,la]])
+    Prediction = clf.predict([[gfinal,marriage,ai,la]])
     if Prediction == 'Y':
         st.text('LOAN IS APPROVED')
     else:
