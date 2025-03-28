@@ -5,13 +5,14 @@ clf = joblib.load('loan_data.joblib')
 
 
 st.title('LOAN APP BY DINESWAR')
-g=st.number_input('Enter Gender 0:Male 1:Female')
-m=st.number_input('Enter Martial status 0:No 1:Yes')
+g=st.selectbox('Select gender:',['Male','Female']
+m=st.selectbox('select marriage status:'['No','Yes'])
 ai=st.number_input('Enter monthly income in thousands')
 la=st.number_input('Enter Loan amount thousands')
-
+gfinal= 0 if g=='Male' else 1
+marriage=0 if m=='No' else 1
 if st.button('PREDICT'):
-    Prediction = clf.predict([[g,m,ai,la]])
+    Prediction = clf.predict([[gfinal,marrage,ai,la]])
     if Prediction == 'Y':
         st.text('LOAN IS APPROVED')
     else:
